@@ -107,11 +107,38 @@
             bottom: 0;
             right: 0;
         }
+        @media (max-width: 768px) {
+            .sideBar{
+                width: 110px !important;
+                padding: 0 12px;
+            }
+               .sideBar .img-container > img{
+                width: 70px;
+            }
+            .sideBar .edit-button {
+                display: none;
+            }
+            .sideBar .name{
+                font-size: .7rem;
+            }
+            .sideBar ul li{
+                font-size: 0;
+            }
+            .sideBar .profile{
+                width: 90px !important;
+            }
+            .card{
+                font-size: .7rem !important;
+            }
+            .card-title{
+                font-size: .9rem;
+            }
+        }
     </style>
 </head>
 <body>
     <section class="dashboard container-fluid d-flex p-0">
-        <div class="sideBar col-3 " style="background-color: #e5e5e5;  height:100vh; width: 220px">
+        <div class="sideBar col-3 col-md-2 " style="background-color: #e5e5e5;  height:100vh; width: 220px">
             <div class="profile col rounded-pill bg-white mt-2 d-flex align-items-center m-auto flex-column" 
                 style="    width: 180px;
                 height: 80vh;"
