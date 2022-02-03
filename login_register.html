@@ -141,7 +141,7 @@
         >
           Post a Job 
         </button>
-        <a href="" 
+        <a href="login_register.html" 
         style="position: absolute;
                  right: 55px;
           text-decoration: none" 
@@ -216,7 +216,7 @@
               <a class="forgot" href="#">Forgot password?</a>
             </div>
   
-            <button class="btn btn-lg btn-dark btn-block" type="submit">
+            <button class="btn btn-lg btn-dark btn-block loginButton" type="submit">
               Login
             </button>
           </div>
@@ -280,6 +280,10 @@
           $(".link2").addClass("active");
           $(".link1").removeClass("active");
         });
+
+        $('.loginButton').click(function(){
+          location.href = "dashboard.html";
+        })
       </script>
     </div>
     <!-- /.container -->

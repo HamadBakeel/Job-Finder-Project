@@ -30,6 +30,7 @@
 
       .job{
         border-radius: 10px;
+        /* cursor: pointer; */
       }
       .job:focus{
         /* border-color: red; */
@@ -45,12 +46,16 @@
       .date{
         font-size: .8rem;
       }
-      .dropdown-toggle::after {
+      .job .dropdown-toggle::after {
             content: none;
         }
         .dropdown-toggle:focus{
           box-shadow: none;
         }
+        /* .jog .dropdown-toggle{
+          position: relative;
+          z-index: 11;
+        } */
 
         @media (max-width: 992px) {
             .nav-button-link{
@@ -85,22 +90,19 @@
 
           </div>
           <button
-          class="btn btn-outline-info px-4 me-4 fw-bold align-self-end rounded-pill nav-button-link"
+            class="btn btn-outline-info px-4 me-4 fw-bold align-self-end rounded-pill nav-button-link"
+            style="position: absolute;
+                  right: 90px;
+            "
+            type="button">
+            Post a Job 
+          </button>
+          <a href="login_register.html" 
           style="position: absolute;
-                 right: 90px;
-          "
-          type="button"
-        >
-          Post a Job 
-        </button>
-        <a href="" 
-        style="position: absolute;
                  right: 55px;
-          text-decoration: none" 
-          
+          text-decoration: none"           
           class="text-secondary nav-button-link"
-          >Sign In</a
-        > 
+          >Sign In</a> 
         </div>
         
         
@@ -470,6 +472,9 @@
   <script>
     $('.job').click(function(){
       location.href = "job_details.html";
-    })
+    });
+    // $('.job .dropdown').click(function(e){
+    //   e.preventDefault();
+    // })
   </script>
 </html>
